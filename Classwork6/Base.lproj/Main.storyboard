@@ -10,7 +10,7 @@
         <!--الافلام-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="movieMasterVC" customModule="Classwork6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,69 +19,105 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-kr-MCi">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-kr-MCi">
                                 <rect key="frame" x="150" y="587" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yl0-jr-5aN"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80m-iM-SWO">
                                 <rect key="frame" x="0.0" y="466" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrU-yD-UoB">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrU-yD-UoB">
                                 <rect key="frame" x="287" y="587" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vl7-Jq-9mN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6w-YT-fgA">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6w-YT-fgA">
                                 <rect key="frame" x="150" y="718" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWD-dt-SrZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOG-QH-gvi">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOG-QH-gvi">
                                 <rect key="frame" x="13" y="718" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLo-KN-XO8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-ht-dHx">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-ht-dHx">
                                 <rect key="frame" x="287" y="718" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrB-LT-DrN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyM-3P-Feh">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyM-3P-Feh">
                                 <rect key="frame" x="157" y="202" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOb-hM-m2L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-bg-hnc">
                                 <rect key="frame" x="20" y="202" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWy-VW-o8j"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-2s-Chv">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-2s-Chv">
                                 <rect key="frame" x="294" y="202" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocT-cW-6TC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK7-sa-m6l">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK7-sa-m6l">
                                 <rect key="frame" x="157" y="333" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AE-Oh-phD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-vh-QL6">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-vh-QL6">
                                 <rect key="frame" x="20" y="333" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKu-f4-5zg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-gV-Dx4">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-gV-Dx4">
                                 <rect key="frame" x="294" y="333" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182219999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="marvelButton0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="td8-GT-yh1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iic-Mq-L5U">
                                 <rect key="frame" x="13" y="587" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.81038182218309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="DCbuttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMe-mw-9aw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -89,17 +125,29 @@
                     </view>
                     <navigationItem key="navigationItem" title="الافلام" id="ZOp-Vz-C3O"/>
                     <connections>
+                        <outlet property="DCImage0" destination="Iic-Mq-L5U" id="61P-IX-hu1"/>
+                        <outlet property="DCImage1" destination="wa9-kr-MCi" id="wW7-7t-Vc2"/>
+                        <outlet property="DCImage2" destination="SrU-yD-UoB" id="hBh-vm-OEp"/>
+                        <outlet property="DCImage3" destination="ZOG-QH-gvi" id="MsK-HG-vHP"/>
+                        <outlet property="DCImage4" destination="N6w-YT-fgA" id="9uj-pJ-gif"/>
+                        <outlet property="DCImage5" destination="PAa-ht-dHx" id="YHN-oY-VOD"/>
+                        <outlet property="marvelImage0" destination="qqA-bg-hnc" id="n4O-kg-LVM"/>
+                        <outlet property="marvelImage1" destination="yyM-3P-Feh" id="n1c-ze-2h9"/>
+                        <outlet property="marvelImage2" destination="qrF-2s-Chv" id="u2Y-6H-fGW"/>
+                        <outlet property="marvelImage3" destination="lUv-vh-QL6" id="FAS-iO-sO5"/>
+                        <outlet property="marvelImage4" destination="rK7-sa-m6l" id="Jlo-MV-tBb"/>
+                        <outlet property="marvelImage5" destination="qaZ-gV-Dx4" id="pbv-Xe-Eat"/>
                         <segue destination="EfX-4p-mRQ" kind="show" id="rSf-YE-NOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.7971014492755" y="138.61607142857142"/>
+            <point key="canvasLocation" x="2915.9420289855075" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie DetailsVC-->
         <scene sceneID="Or6-IS-7gi">
             <objects>
-                <viewController id="EfX-4p-mRQ" sceneMemberID="viewController">
+                <viewController id="EfX-4p-mRQ" customClass="MovieDetailsVC" customModule="Classwork6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ctK-Cb-g8L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,10 +239,25 @@
                         <viewLayoutGuide key="safeArea" id="z7y-dN-8mx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Adm-0u-Z7p"/>
+                    <connections>
+                        <outlet property="actorImageView1" destination="AKj-gh-5eg" id="Aog-s0-g6u"/>
+                        <outlet property="actorImageView2" destination="B8O-de-coQ" id="zaa-aB-scW"/>
+                        <outlet property="actorImageView3" destination="twZ-i9-ilC" id="5fN-xH-bYQ"/>
+                        <outlet property="actorLable1" destination="wHN-hS-erj" id="EbD-l6-42D"/>
+                        <outlet property="actorLable2" destination="8tQ-WT-RSj" id="Jpv-3t-jb7"/>
+                        <outlet property="actorLable3" destination="R05-SN-m3z" id="bIf-lV-lpA"/>
+                        <outlet property="movieImage" destination="Mam-5X-xcm" id="cdx-bH-swd"/>
+                        <outlet property="movieRatedLable" destination="inS-6X-Pk1" id="eAl-yA-sQF"/>
+                        <outlet property="movieRatedView" destination="Siy-wr-96C" id="Nbk-g0-CwA"/>
+                        <outlet property="movieRatingLable" destination="Bg7-jk-M5w" id="e4e-HC-lrf"/>
+                        <outlet property="movieRatingView" destination="Bg7-jk-M5w" id="eni-2D-oB4"/>
+                        <outlet property="movieReleaseDateLable" destination="ELa-a2-1bN" id="liX-2U-648"/>
+                        <outlet property="movieReleaseDateView" destination="Scl-Og-jdt" id="8X3-Ig-DI7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZm-R4-3R1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2779.7101449275365" y="138.61607142857142"/>
+            <point key="canvasLocation" x="3689.8550724637685" y="138.61607142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hLA-FZ-4FE">
@@ -210,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idu-8g-6lX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600.0000000000005" y="138.61607142857142"/>
+            <point key="canvasLocation" x="4510.144927536232" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O3Z-eD-8he">
@@ -223,12 +286,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e2w-ip-hqD"/>
+                        <segue destination="QJh-x8-jWD" kind="relationship" relationship="rootViewController" id="e2w-ip-hqD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPr-kA-i08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095.6521739130435" y="138.61607142857142"/>
+        </scene>
+        <!--m-->
+        <scene sceneID="IXN-Zs-how">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QJh-x8-jWD" customClass="m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Qkw-ng-evE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PlA-wX-XtP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lwW-Xe-i8R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwq-fD-8Bw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005.7971014492755" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
